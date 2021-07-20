@@ -13,6 +13,7 @@ For instance, for FREAK descriptors, this operation transforms 512-dimension
 An implementation of LRT is at [here](https://github.com/ethz-asl/maplab/blob/master/algorithms/loopclosure/descriptor-projection/src/build-projection-matrix.cc).
 
 Briefly, this projection can be described by a projection matrix A.
+
 For a descriptor x, the projection result is x' = Ax.
 
 ## 3. Variance balancing by Eigenvalue allocation
@@ -25,6 +26,7 @@ First find the principal directions of all the descriptors by PCA,
 second assign the eigenvalues corresponding to these directions into subspaces by a greedy approach.
 
 Variance balancing can be described by a rotation matrix R.
+
 For a descriptor x, the variance balancing and the ealier projection results in 
 x' = RAx.
 
@@ -48,7 +50,10 @@ we are fairly certain that P is better than N and our hard work in steps 1-3 pay
 
 # References
 [1] Lynen et al. Get out of my lab.
+
 [2] Lynen et al. Trajectory-based place-recognition.
+
 [3] Ge et al. Optimized product quantization.
+
 [4] Random projection. https://en.wikipedia.org/wiki/Random_projection
 
